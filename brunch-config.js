@@ -11,6 +11,8 @@ module.exports = {
   plugins: {
     babel: {presets: ['es2015']},
     postcss: {processors: [require('autoprefixer')]},
-    autoReload: {enabled: true}
+    browserSync: {
+      files: "public/*.html"
+    }
   }
 };
